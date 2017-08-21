@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function change(){
+				//1.获取下拉选项框的值
+				var value = document.getElementById("sel").value;
+				//2.将下拉选项框的值赋给ul列表的type属性
+				var ul = document.getElementById("ul");
+				ul.type = value;
+			}
+		</script>
+	</head>
+	<body>
+		<p>无序列表==</p>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>Javascript</li>
+		</ul>
+		<select id="sel" onchange="change()">
+			<option value="circle">空心原点</option>
+			<option value="disc">实心原点</option>
+			<option value="square">实心方块</option>
+		</select>
+		<ul id="ul" type="none">
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>Javascript</li>
+		</ul>
+		<hr width="100px" align="left" size="10" color="green"/>
+		<ol >
+			<li>看电影</li>
+			<li>看小说</li>
+			<li>看美女</li>
+		</ol>
+		<hr />
+		<dl>
+
+	    <dt>湖南城市</dt>
+	<dd>长沙</dd>
+	<dd>衡阳</dd>
+	<dd>常德</dd></dl>
+	<dl>
+	    <dt>湖北城市</dt>
+	<dd>武汉</dd>
+	<dd>襄樊</dd>
+	<dd>宜昌</dd>
+	</dl>
+
+	</body>
+</html>
