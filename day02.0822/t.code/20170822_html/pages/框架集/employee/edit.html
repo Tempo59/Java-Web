@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function checkeUser(){
+				//1.得到用户输入的用户名
+				var value = document.getElementById("username").value;
+				//2.拿这个用户名去数据库比对，若果存在该用户名，提示已经被注册
+				var msg = document.getElementById("msg");
+				if(value == "admin"){
+					msg.innerHTML = "<font color='red'>该用户名已经被注册</font>";
+				}else{
+					msg.innerHTML = "<font color='green'>该用户名可以被注册</font>";
+				}
+				//如果不存在，提示恭喜你。。。。。
+			}
+		</script>
+	</head>
+	<body>
+		<form action="" method="post">
+			<fieldset>
+				<legend>添加员工</legend>
+				<label>用户名：</label>
+				<input id="username" name="username" onblur="checkeUser()" type="text"/>
+				<span id="msg"></span>
+			</fieldset>
+		</form>
+	</body>
+</html>

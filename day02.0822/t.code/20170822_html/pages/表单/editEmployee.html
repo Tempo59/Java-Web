@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="form.html" method="post" enctype="multipart/form-data">
+			<input type="hidden" value="123" name="id"/>
+			用户名:<input type="text" placeholder="请输入你的芳名" name="username" required="required"/><br/>
+			密码:<input type="password" autofocus="autofocus" name="pwd"/><br/>
+			电子邮件:<input type="email" name="email"/><br/>
+			出生日期:<input type="date" name="bornDate"/><br/>
+			学历:<select name="edu">
+				<option value="middle">中学</option>
+				<option>大专</option>
+				<option selected="selected">本科</option>
+				<option>硕士</option>
+				<option>博士</option>
+				<option>壮士</option>
+				<option>烈士</option>
+			</select> <br/>
+			性别:<input type="radio" name="gender" value="male"/>男 
+			<input type="radio" name="gender" checked="checked" value="female"/>女<br/>
+			爱好:<input type="checkbox" name="hobby" value="movie"/> 看电影
+			<input type="checkbox" name="hobby" value="novels"/> 看小说
+			<input type="checkbox" name="hobby" value="beauty"/> 看美女
+			<br/>
+			年龄:<input name="age" type="number" min="18" max="65"/><br/>
+			身份证照片:<input type="file"/><br/>
+			个人首页:<input type="url"/><br/>
+			电话号码:<input type="text" name="phone" pattern="^1[358]\d{9}$"/>
+			简介：<textarea name="intro" cols="40" rows="10"></textarea>
+			<input type="submit" value="submit"/>
+			<input type="reset" />
+			<input type="button" value="按钮"/>
+			<input type="image" src="https://img12.360buyimg.com/babel/s100x100_jfs/t7090/10/2447836902/25000/e42d1fd2/59964c9fNb03dea47.jpg!q90.webp"/>
+		</form>
+		<form oninput="result.value = parseInt(num1.value) + parseInt(num2.value)">
+			<input name="num1" type="number" />
+			<input name="num2" type="number" />
+			<output name="result"></output>
+		</form>
+	</body>
+</html>

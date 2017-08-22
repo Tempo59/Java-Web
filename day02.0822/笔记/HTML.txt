@@ -1,0 +1,59 @@
+day02.2017.08.22
+1.表单元素
+<form><input>
+<input type="hidden" value="123" name="id" />
+<input type="text"/>文本
+<input type="password"/>密码
+<input type="email"/>邮件
+<input type="date"/>出生日期
+下拉框:<select><option>
+<input type="radio" name="sex" checked="checked"/>男
+<input type="radio" name="sex" />女(勾选单选项,name确定两个是同一个类别下的选项)
+<input type="checkbox" name="hobby"/>看电影
+<input type="checkbox" name="hobby"/>听音乐
+<input type="checkbox" name="hobby"/>打篮球(勾选多选项)
+<textarea>(文本区域)
+<input type="file"/>(提交文件)
+<input type="submit" value="提交"/>
+<input>的type有好多东西哟,h5新增的功能
+<input type="number" min="18" max="30"/>
+<input type="search"  list="kind"/><br />
+<datalist id="kind">
+<option>html</option>
+<option>css</option>
+</datalist>(下拉框的另一种,一般网站的搜索框)
+<input type="reset"/>
+<input type="img"/>(图片按钮)
+<form action="">(提交操作,内容会在浏览器的地址栏中)
+value属性:
+(input表单内容未设置value,像radio等单选框传递的是"on"值,value传递值)
+<input type="text" name="username" required="required" placeholder="请输入用户名"/>
+<form action="../index.html" method="post" enctype="multipart/form-data">
+<form oninput="">
+2.补充:
+pattern属性(正则表达式) ^()代表匹配()里面开头的字符串。^表示其后的字符必须位于字符串的开始处,$表示其前面的字符必须位于字符串的结束处。
+web项目用编辑器的浏览器打开找不到文件等情况,可以直接打开本地项目位置,本地打开。
+3.<table>标签
+<fieldset><legend>(划分区域,legend区域名称)
+<form>属性:
+method:表单提交方式
+action:跳转操作
+target:接收页窗口位置
+enctype:涉及文件上传操作需要的属性
+<table>标签的属性:
+border="1"
+bordercolor="blue"
+bgcolor="red"
+background="a.png"
+cellspacing="0"(单元格的距离)
+cellpadding="1"(表格内容和边框的距离)
+align="center"
+<tr><th>
+<tr><td>
+rows:行 cols:列
+4.<frameset>标签
+<frameset rows="20%,*"><frame src="">
+<frameset>和<body>不能共存
+5.<div><span>容器标签
+<div>是行内元素
+<span>是块级元素
