@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.relative{
+				position: relative;
+				top:100px;
+				left:20px;
+				background: #008000;
+			}
+			.absolute{
+				position: absolute;
+				top:100px;
+				left:20px;
+				background: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div style="height:100px;"></div>
+		<div style="position: absolute;top: 100px;">
+		<p >
+			喂!小兄弟，<span class="absolute">请留步 哇!不得了,不得了! 你有道灵光由天灵盖喷出来,你知道吗? </span> 就有一身横练的筋骨 简直是百年难得一见的练武奇才 如果有一天,让你打通任督二脉 那还不飞天啦! 正所谓 我不入地狱,谁入地狱 惩恶除奸,维护世界和平这任务 就交给你了,好不好? 
+			<span class="relative">
+				嗯这本如来神掌[王者荣耀]
+			</span> 是无价之宝 你跟我有缘 就收你十块,传授给你
+			<hr/>
+			相对定位，偏移量相对于元素自身，它原来占据的空间还存在
+			相对定位，偏移量参照物为设置了定位属性的父元素，如果父元素没有设置定位属性，会层层向上追溯，直到body
+			脱离了文档流，释放原来的空间
+		</p>
+		</div>
+	</body>
+</html>

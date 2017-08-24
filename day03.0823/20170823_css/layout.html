@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0 auto;
+			}
+			
+			#header {
+				width: 960px;
+				height: 100px;
+				background: #ABCDEF;
+			}
+			
+			#nav {
+				width: 960px;
+				height: 30px;
+				background: #FF9900;
+				margin-top: 20px;
+			}
+			
+			#nav ul li {
+				float: left;
+				margin-left: 10px;
+				line-height: 30px;
+				text-align: center;
+				border-right: 1px solid gray;
+				list-style: none;
+				position: relative;
+			}
+			
+			#nav ul li a {
+				display: block;
+				width: 105px;
+			}
+			
+			#main {
+				margin-top: 10px;
+				width: 960px;
+				height: 800px;
+				clear: both;
+			}
+			
+			#aside {
+				width: 27%;
+				height: 800px;
+				background: #ABCDEF;
+				float: left;
+			}
+			
+			#section {
+				width: 72%;
+				height: 800px;
+				background: #ABCDEF;
+				float: right;
+			}
+			
+			#footer {
+				margin-top: 10px;
+				width: 960px;
+				height: 100px;
+				background: #ABCDEF;
+			}
+			
+			#fixed {
+				width: 50px;
+				height: 50px;
+				background: #FF0000;
+				position: fixed;
+				top: 200px;
+				right: 10px;
+			}
+			
+			a:link {
+				font-size: 15px;
+				color: #00c;
+				font-family: 宋体, "MS Outlook";
+				text-align: left;
+				text-decoration: none;
+			}
+			
+			a:hover {
+				color: #930;
+				font-size: 16px;
+				text-decoration: none;
+			}
+			
+			a:active {
+				color: #f03;
+				text-decoration: none;
+			}
+			
+			a:visited {
+				text-decoration: underline;
+			}
+			
+			#nav ul {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			
+			#nav ul li {
+				float: left;
+				line-height: 30px;
+				display: list-item;
+				position: relative;
+			}
+			
+			#nav ul li a,
+			#nav ul li a:visited {
+				display: block;
+				text-align: center;
+				text-decoration: none;
+				width: 104px;
+				height: 30px;
+			}
+			
+			#nav ul li ul {
+				display: none;
+			}
+			
+			#nav ul li:hover a {
+				color: #fff;
+				background: #b3ab79;
+			}
+			
+			#nav ul li:hover ul {
+				display: block;
+				position: absolute;
+				top: 30px;
+				width: 105px;
+			}
+			
+			#nav ul li:hover ul li a {
+				display: block;
+				background: #8080c0;
+				color: #000;
+			}
+			
+			#nav ul li:hover ul li a:hover {
+				background: #808040;
+				color: #000;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="header">
+			<h1 align="center"><font color="blue">哪 儿 有 网 上 商 城 管 理 系 统</font></h1>
+			<div id="nav">
+				<ul>
+					<li>
+						<a href="#">成电新闻</a>
+					</li>
+					<li>
+						<a href="#">学校概况</a>
+					</li>
+					<li>
+						<a href="#">院系部门</a>
+					</li>
+					<li>
+						<a href="#">师资队伍</a>
+					</li>
+					<li>
+						<a href="#">人才培养</a>
+						<ul>
+							<li>
+								<a href="#">本科生</a>
+							</li>
+							<li>
+								<a href="#">硕士烟酒僧</a>
+							</li>
+							<li>
+								<a href="#">博士烟酒僧</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">科学研究</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="main">
+			<div id="aside">
+				侧边栏
+			</div>
+			<div id="section">
+				<div id="fixed">我是二维码</div>
+				主体区域
+			</div>
+		</div>
+		<div id="footer">
+			脚部
+		</div>
+	</body>
+
+</html>
