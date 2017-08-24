@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function checkGender(gender){
+				var genders = document.getElementsByName("gender");
+				for(var i = 0; i < genders.length;i++){
+					var genderRadio = genders[i];
+					var value = genderRadio.value;
+					gender == value ? genderRadio.checked = true : genderRadio.checked = false;
+					
+				}
+			}
+		</script>
+	</head>
+	<body onload="checkGender('female')">
+		<form action="" method="post">
+			用户名:<input type="text" name="username" value="编辑前的用户名"/><br />
+			性别:<input type="radio" name="gender" value="male"/>男
+				<input type="radio" name="gender" value="female"/>女
+			<input type="submit" value="提交"/>
+		</form>
+		
+	</body>
+</html>
