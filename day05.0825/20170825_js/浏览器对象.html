@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function init(){
+				var info = navigator.userAgent;
+				document.getElementById("msg").innerHTML = "你的浏览器信息为：" + info;
+				if(info.indexOf("QQ") < 0){
+					document.getElementById("msg1").innerHTML = "，推荐使用QQ浏览器看片效果更佳哦";
+				}
+			}
+		</script>
+	</head>
+	<body onload="init()">
+		<span id="msg"></span>
+		<span id="msg1"></span>
+	</body>
+</html>

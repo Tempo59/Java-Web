@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function show(event){
+				event = event || e;
+				if(event.cancelBubble){
+					event.cancelBubble = false;
+				}else{
+					event.stopPropagation();
+				}
+			}
+		</script>
+	</head>
+	<body onclick="show(event)">
+		<div onclick="show(event)">
+			<p onclick="show(event)">敢不敢点我?</p>
+		</div>
+	</body>
+</html>

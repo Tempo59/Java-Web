@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function paging(index,max){
+				//请求分页的功能程序
+				location.href = "index1.html?index=" + index;
+			}
+		</script>
+	</head>
+	<body>
+		<table border="1" cellpadding="1" cellspacing="1">
+			<caption>学生列表</caption>
+			<tr>
+				<th>学号</th><th>姓名</th><th>性别</th><th>操作</th>
+			</tr>
+			<tr>
+				<td>9527</td>
+				<td>华安</td>
+				<td>男</td>
+				<td>编辑  删除</td>
+			</tr>
+			<tr>
+				<td>9527</td>
+				<td>华安</td>
+				<td>男</td>
+				<td>编辑  删除</td>
+			</tr>
+			<tr>
+				<td>9527</td>
+				<td>华安</td>
+				<td>男</td>
+				<td>编辑  删除</td>
+			</tr>
+			<tr>
+				<td>9527</td>
+				<td>华安</td>
+				<td>男</td>
+				<td>编辑  删除</td>
+			</tr>
+			<tr>
+				<td>9527</td>
+				<td>华安</td>
+				<td>男</td>
+				<td>编辑  删除</td>
+			</tr>
+			<tr>
+				<td>9527</td>
+				<td>华安</td>
+				<td>男</td>
+				<td>编辑  删除</td>
+			</tr>
+			<tr>
+				<td>9527</td>
+				<td>华安</td>
+				<td>男</td>
+				<td>编辑  删除</td>
+			</tr>
+			<tr>
+				<td>9527</td>
+				<td>华安</td>
+				<td>男</td>
+				<td>编辑  删除</td>
+			</tr>
+		</table>
+	<a href="javascript:paging(1,10)">第一页</a> 
+	<a href="javascript:paging(1,10)"">上一页</a>
+	<a href="javascript:location.replace('index1.html')">下一页</a>
+	<a href="">尾页</a>
+	<hr />
+	<select onchange="location.href=this.value">
+		<option value="http://www.163.com">网易</option>
+		<option value="http://www.sina.com.cn">新浪</option>
+		<option value="http://www.sohu.com">搜狐</option>
+	</select>
+	
+	</body>
+</html>
